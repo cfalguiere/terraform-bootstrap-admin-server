@@ -7,9 +7,6 @@
 admin_role_name = "<the role created by terraform-bootstrap-account>"
 admin_role_arn  = "<arn of the role >"
 
-#
-# This part also act as a backend configuration file
-# Do not change the key names
 
 #### Resources to be used :
 
