@@ -11,7 +11,7 @@ admin_role_arn  = "<arn of the role >"
 #### Resources to be used :
 
 # choose a range for security group inbound
-local_cidr_block = "<yout local IP range>"
+local_cidr_block = "<your local IP range>"
 
 instance_context = {
     ssh_key_pair_name   = "<name of you key in AWS>"
