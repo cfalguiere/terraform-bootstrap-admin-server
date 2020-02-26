@@ -66,6 +66,7 @@ module "gen_scripts" {
   source = "./modules/gen_scripts"
 
   instance = module.admin_server.current
+  instance_suffix = var.admin_instance.name
   output_dir = var.output_dir
 
   parent_context =  {
