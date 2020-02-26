@@ -6,6 +6,11 @@ variable "instance" {
   })
 }
 
+variable "instance_suffix" {
+  description = "suffix used in script names"
+  type        = string
+}
+
 variable "output_dir" {
   description = "the folder name"
   type        = string
