@@ -1,7 +1,6 @@
 variable "instance" {
   description = "aws_instance attributes"
   type     = object({
-    name           = string
     id    = string
   })
 }
