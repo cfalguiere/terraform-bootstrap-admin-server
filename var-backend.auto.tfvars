@@ -1,4 +1,4 @@
-# Created-By Terraform central-bootstrap-local iac-admin
+# Created-By Terraform terraform-bootstrap-account iac-admin
 
 # Backend access configuration
 # use with -var-file
