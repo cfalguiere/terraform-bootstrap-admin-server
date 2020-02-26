@@ -9,7 +9,7 @@ resource "aws_instance" "admin" {
     instance_type               = var.instance.instance_type
     key_name                    = var.instance_context.ssh_key_pair_name
     vpc_security_group_ids      = [ aws_security_group.admin_sg.id ]
-    subnet_id                   = var.parent_context.selected_subnet.subnet
+    subnet_id                   = var.parent_context.selected_subnet.id
     iam_instance_profile        = aws_iam_instance_profile.admin_role.name
     associate_public_ip_address = true
 
