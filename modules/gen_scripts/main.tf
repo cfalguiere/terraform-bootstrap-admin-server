@@ -12,7 +12,7 @@ resource "local_file" "stop_instance" {
                             producer = local.producer
                             instance_id = var.instance.id
                       })
-    filename    = "${var.output_dir}/stop-instance-${var.instance.name}.sh"
+    filename    = "${var.output_dir}/stop-instance-${var.instance_suffix}.sh"
     file_permission = "0700" # u=rwx
 }
 
@@ -23,6 +23,6 @@ resource "local_file" "start_instance" {
                             producer = local.producer
                             instance_id = var.instance.id
                       })
-    filename    = "${var.output_dir}/start-instance-${var.instance.name}.sh"
+    filename    = "${var.output_dir}/start-instance-${var.instance_suffix}.sh"
     file_permission = "0700" # u=rwx
 }
