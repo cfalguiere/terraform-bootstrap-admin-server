@@ -48,7 +48,7 @@ resource "aws_instance" "admin" {
                 sudo -s -u ubuntu git config --global credential.UseHttpPath true
 
                 # clone IAC repo
-                sudo -i -u ubuntu git clone https://git-codecommit.eu-west-3.amazonaws.com/v1/repos/infra
+                sudo -i -u ubuntu git clone ${var.iac_scripts_repo_url}
 
                 echo "DONE"
                 EOF
