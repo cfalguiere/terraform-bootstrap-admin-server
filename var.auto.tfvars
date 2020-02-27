@@ -19,6 +19,9 @@ instance_context = {
     az                  = "<your az>"
 }
 
+# this repo will be cloned onto the admin server
+iac_scripts_repo_url = "<your repo url>"
+
 #### Resources to be created :
 
 security_group_name = "<the security group name to be created>"
