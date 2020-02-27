@@ -17,6 +17,11 @@ variable "instance_context" {
   })
 }
 
+variable "iac_scripts_repo_url" {
+  description = "the scripts repo to be cloned"
+  type        = string
+}
+
 variable "security_group_name" {
   description = "the security group to be created"
   type        = string
