@@ -22,7 +22,7 @@ resource "aws_instance" "admin" {
                 apt-get update --quiet --assume-yes
                 apt-get install --quiet --assume-yes  aptitude
                 DEBIAN_FRONTEND=noninteractive aptitude install --quiet --assume-yes  tzdata # wierd behavior of tzdata implies by a listed package
-                aptitude install --quiet --assume-yes inetutils-traceroute awscli  git unzip wget curl graphviz jq pip
+                aptitude install --quiet --assume-yes inetutils-traceroute awscli  git unzip wget curl graphviz jq python3-pip
 
                 # ansible latest
                 apt-get --assume-yes install software-properties-common
@@ -30,7 +30,7 @@ resource "aws_instance" "admin" {
                 apt-get --assume-yes update
                 apt-get --assume-yes install ansible
 
-                sudo -s -u ubuntu pip install jmespath
+                sudo -s -u ubuntu pip3 install jmespath
 
                 # terraform
                 cd /home/ubuntu
