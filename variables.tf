@@ -39,6 +39,12 @@ variable "instance_context" {
   })
 }
 
+# this repo will be cloned onto the admin server
+variable "iac_scripts_repo_url" {
+  description = "a repo name for iac scripting"
+  type        = string
+}
+
 variable "output_dir" {
   description = "folder into which the scripts will be written"
   type        = string
