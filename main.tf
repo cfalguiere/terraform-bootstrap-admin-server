@@ -50,6 +50,7 @@ module "admin_server" {
   instance_context = var.instance_context
   security_group_name = var.security_group_name
   local_cidr_block = var.local_cidr_block
+  iac_scripts_repo_url = var.iac_scripts_repo_url
 
   parent_context =  {
       common_tags = local.common_tags
